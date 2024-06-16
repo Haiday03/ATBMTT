@@ -616,8 +616,8 @@ public class DSAScreen extends javax.swing.JFrame {
 
         try {
             if (DSAController.checkSignature(txtThongDiepCanKiemTra.getText(), rTmp, sTmp, q, p, g, y)) {
-             JOptionPane.showMessageDialog(null, "Chữ ký đã hợp lệ", "Thông báo", JOptionPane.OK_OPTION);
-            } else if(!txtThongDiepCanKiemTra.getText().equals(txtThongDiep.getText())){
+             JOptionPane.showMessageDialog(null, "Chữ ký đã hợp lệ", "Thông báo", JOptionPane.INFORMATION_MESSAGE);
+            } else if(!txtThongDiepCanKiemTra.getText().trim().equals(txtThongDiep.getText().trim())){
              JOptionPane.showMessageDialog(null, "Thông điệp sai!", "Thông báo", JOptionPane.ERROR_MESSAGE);
             }else{
              JOptionPane.showMessageDialog(null, "Chữ ký sai!", "Thông báo", JOptionPane.ERROR_MESSAGE);
