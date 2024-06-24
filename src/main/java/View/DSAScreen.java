@@ -689,7 +689,7 @@ public class DSAScreen extends javax.swing.JFrame {
          FileChoose f = new FileChoose();
         f.setVisible(true);
         f.saveToFile(txtThongDiep);
-        JOptionPane.showMessageDialog(null, "Chữ ký đã hợp lệ", "Thông báo", JOptionPane.OK_OPTION);
+        JOptionPane.showMessageDialog(null, "Lưu file thành công!", "Thông báo", JOptionPane.INFORMATION_MESSAGE);
         f.dispose();
     }//GEN-LAST:event_button3ActionPerformed
 
